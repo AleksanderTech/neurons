@@ -128,14 +128,14 @@ const network = new NeuralNetwork({
   layers: [
     new DenseLayer({
       nInputs: 1,
-      nNeurons: 5,
+      nNeurons: 10,
     }),
     new DenseLayer({
-      nInputs: 5,
-      nNeurons: 5,
+      nInputs: 10,
+      nNeurons: 10,
     }),
     new DenseLayer({
-      nInputs: 5,
+      nInputs: 10,
       nNeurons: 1,
     }),
   ],
@@ -155,6 +155,7 @@ let dataset = [
   [[9], [11]],
 ];
 
+// train network
 for (let i = 0; i < 500; i++) {
   for (let j = 0; j < dataset.length; j++) {
     const actualOutput = network.forward({ input: dataset[j][0] });
