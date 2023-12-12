@@ -1,0 +1,19 @@
+{
+  "name": "neurons",
+  "version": "1.0.0",
+  "description": "A simple neural network implementation",
+  "main": "network.ts",
+  "scripts": {
+    "start": "ts-node network.ts"
+  },
+  "keywords": [
+    "neural-network",
+    "typescript",
+    "machine-learning"
+  ],
+  "author": "Aleksander Roztropiński",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
