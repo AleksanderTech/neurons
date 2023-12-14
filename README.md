@@ -28,15 +28,13 @@ const network = new NeuralNetwork({
   layers: [
     new DenseLayer({
       nInputs: 1,
-      nNeurons: 10,
+      nNeurons: 3,
+      activation: reluActivation,
     }),
     new DenseLayer({
-      nInputs: 10,
-      nNeurons: 10,
-    }),
-    new DenseLayer({
-      nInputs: 10,
+      nInputs: 3,
       nNeurons: 1,
+      activation: linearActivation,
     }),
   ],
 });

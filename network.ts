@@ -183,7 +183,7 @@ let dataset = [
 ];
 
 // train network
-for (let i = 0; i < 1000; i++) {
+for (let i = 0; i < 500; i++) {
   for (let j = 0; j < dataset.length; j++) {
     const actualOutput = network.forward({ input: dataset[j][0] });
     network.backward(dataset[j][1], actualOutput);
